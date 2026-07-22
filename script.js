@@ -2,6 +2,23 @@ const header = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('.site-nav');
 const bookingForm = document.querySelector('.booking-form');
+const themeButtons = document.querySelectorAll('[data-theme-choice]');
+
+const applyTheme = (theme) => {
+	document.body.dataset.theme = theme;
+	themeButtons.forEach((button) => {
+		const isActive = button.dataset.themeChoice === theme;
+		button.classList.toggle('is-active', isActive);
+		button.setAttribute('aria-pressed', String(isActive));
+	});
+	localStorage.setItem('portfolio-theme', theme);
+};
+
+applyTheme(localStorage.getItem('portfolio-theme') || 'dark');
+
+themeButtons.forEach((button) => {
+	button.addEventListener('click', () => applyTheme(button.dataset.themeChoice));
+});
 
 const closeMenu = () => {
 	menuToggle.setAttribute('aria-expanded', 'false');
