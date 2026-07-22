@@ -39,21 +39,21 @@ button { cursor: pointer; }
 @media (min-width: 700px) { .container { padding-left: 3rem; padding-right: 3rem; }.hero { padding-bottom: 6rem; }.hero-bottom { align-items: flex-end; flex-direction: row; }.hero-actions { justify-content: flex-end; width: auto; }.button { min-width: 152px; }.intro-grid, .achievements-grid, .media-heading, .affiliations-grid, .contact-grid { grid-template-columns: 1fr 2.2fr; }.people-grid { grid-template-columns: 1fr 1fr; }.person-card { aspect-ratio: .8; }.gallery { grid-template-columns: 1.1fr .9fr 1.1fr; }.gallery-image, .gallery-three { aspect-ratio: .95; grid-column: auto; }.contact-grid { grid-template-columns: 1fr 1.15fr; }.footer-wrap { align-items: center; grid-template-columns: auto 1fr auto auto; }.footer-wrap p { border-left: 1px solid var(--line); padding-left: 1.5rem; } }
 @media (min-width: 980px) { .menu-toggle { display: none; }.site-nav { align-items: center; background: none; flex-direction: row; gap: 2.5rem; inset: auto; opacity: 1; padding: 0; pointer-events: auto; position: static; transform: none; }.hero h1 { font-size: clamp(5rem, 9.5vw, 8rem); }.section-pad { padding: 9rem 0; }.intro-grid { grid-template-columns: 1fr 2fr; }.people-grid { margin-top: 8rem; }.person-card { aspect-ratio: 1.08; }.timeline { margin-top: 0; }.achievements-grid { grid-template-columns: 1fr 1.2fr; }.media-heading { grid-template-columns: 1.2fr 1fr; }.affiliations-grid { grid-template-columns: 1fr 2fr; }.contact-grid { grid-template-columns: 1fr 1.15fr; } }
 
-body[data-theme="canva"] {
-	--bg-primary: #F5F1E8;
-	--bg-secondary: #DCE4D1;
-	--text-primary: #24332A;
-	--text-muted: #687268;
-	--accent-gold: #C2A84B;
-	--accent-hover: #A58A32;
-	--line: rgba(36, 51, 42, .18);
+body[data-theme="light"] {
+	--bg-primary: #F4F6F1;
+	--bg-secondary: #E5EAE1;
+	--text-primary: #172019;
+	--text-muted: #5F6961;
+	--accent-gold: #75B82B;
+	--accent-hover: #91D63E;
+	--line: rgba(23, 32, 25, .18);
 }
-body[data-theme="canva"] .site-header { background: rgba(245, 241, 232, .88); }
-body[data-theme="canva"] .site-header.scrolled { background: rgba(245, 241, 232, .97); }
-body[data-theme="canva"] .hero-overlay { background: linear-gradient(90deg, rgba(36, 51, 42, .82), rgba(36, 51, 42, .22) 70%), linear-gradient(0deg, rgba(36, 51, 42, .8), transparent 55%); }
-body[data-theme="canva"] .person-angelo .person-photo, body[data-theme="canva"] .person-jada .person-photo { background-image: linear-gradient(0deg, rgba(36, 51, 42, .82), transparent 65%), var(--person-image); }
-body[data-theme="canva"] .person-angelo .person-photo { --person-image: url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80'); }
-body[data-theme="canva"] .person-jada .person-photo { --person-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80'); }
-body[data-theme="canva"] .showreel-shade { background: rgba(36, 51, 42, .22); }
-body[data-theme="canva"] .hero h1, body[data-theme="canva"] .hero-bottom > p, body[data-theme="canva"] .person-info h3, body[data-theme="canva"] .person-info > p:not(.eyebrow), body[data-theme="canva"] .media-caption, body[data-theme="canva"] .duration { color: var(--bg-primary); }
+body[data-theme="light"] .site-header { background: rgba(244, 246, 241, .88); }
+body[data-theme="light"] .site-header.scrolled { background: rgba(244, 246, 241, .97); }
+body[data-theme="light"] .hero-overlay { background: linear-gradient(90deg, rgba(23, 32, 25, .82), rgba(23, 32, 25, .22) 70%), linear-gradient(0deg, rgba(23, 32, 25, .8), transparent 55%); }
+body[data-theme="light"] .person-angelo .person-photo, body[data-theme="light"] .person-jada .person-photo { background-image: linear-gradient(0deg, rgba(23, 32, 25, .82), transparent 65%), var(--person-image); }
+body[data-theme="light"] .person-angelo .person-photo { --person-image: url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80'); }
+body[data-theme="light"] .person-jada .person-photo { --person-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80'); }
+body[data-theme="light"] .showreel-shade { background: rgba(23, 32, 25, .22); }
+body[data-theme="light"] .hero h1, body[data-theme="light"] .hero-bottom > p, body[data-theme="light"] .person-info h3, body[data-theme="light"] .person-info > p:not(.eyebrow), body[data-theme="light"] .media-caption, body[data-theme="light"] .duration { color: var(--bg-primary); }
 

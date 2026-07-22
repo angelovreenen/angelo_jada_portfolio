@@ -5,6 +5,7 @@ const bookingForm = document.querySelector('.booking-form');
 const themeButtons = document.querySelectorAll('[data-theme-choice]');
 
 const applyTheme = (theme) => {
+	theme = theme === 'light' ? 'light' : 'dark';
 	document.body.dataset.theme = theme;
 	themeButtons.forEach((button) => {
 		const isActive = button.dataset.themeChoice === theme;
