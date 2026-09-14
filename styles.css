@@ -143,11 +143,21 @@ button { cursor: pointer; }
 
 /* Achievements Section */
 .achievements { background: var(--bg-secondary); }
-.timeline { border-top: 1px solid var(--line); margin-top: 1.5rem; }
+.timeline {
+    border-top: 1px solid var(--line);
+    margin-top: 1.5rem;
+    max-height: 520px;
+    overflow-y: auto;
+    padding-right: .75rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,.35) transparent;
+}
 .timeline-item { border-bottom: 1px solid var(--line); display: grid; gap: 1.2rem; grid-template-columns: 52px 1fr; padding: 1.4rem 0; }
 .timeline-item > span { color: var(--accent-gold); font-size: .75rem; padding-top: .15rem; }
 .timeline-item h3 { font-family: var(--display); font-size: 1rem; letter-spacing: -.03em; margin: 0; }
 .timeline-item p { color: var(--text-muted); font-size: 1rem; margin: .35rem 0 0; }
+.timeline::-webkit-scrollbar { width: 8px; }
+.timeline::-webkit-scrollbar-thumb { background: rgba(255,255,255,.35); border-radius: 999px; }
 .disciplines { border-top: 1px solid var(--line); margin-top: 5rem; padding-top: 1.4rem; }
 .discipline-list { display: flex; flex-wrap: wrap; gap: .5rem .8rem; margin-top: 1.6rem; }
 .discipline-list span { border: 1px solid var(--line); color: var(--text-muted); font-size: .78rem; padding: .55rem .8rem; }
