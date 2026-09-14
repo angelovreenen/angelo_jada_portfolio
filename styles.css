@@ -251,16 +251,16 @@ button { cursor: pointer; }
    9. LIGHT THEME OVERRIDES
    ========================================== */
 body[data-theme="light"] {
-    --bg-primary: #F4F6F1;
-    --bg-secondary: #E5EAE1;
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
     --text-primary: #172019;
     --text-muted: #5F6961;
     --accent-gold: #75B82B;
     --accent-hover: #91D63E;
     --line: rgba(23, 32, 25, .18);
 }
-body[data-theme="light"] .site-header { background: rgba(244, 246, 241, .88); }
-body[data-theme="light"] .site-header.scrolled { background: rgba(244, 246, 241, .97); }
+body[data-theme="light"] .site-header { background: rgba(255, 255, 255, .88); }
+body[data-theme="light"] .site-header.scrolled { background: rgba(255, 255, 255, .97); }
 body[data-theme="light"] .hero-overlay { background: linear-gradient(90deg, rgba(23, 32, 25, .82), rgba(23, 32, 25, .22) 70%), linear-gradient(0deg, rgba(23, 32, 25, .8), transparent 55%); }
 body[data-theme="light"] .person-angelo .person-photo, 
 body[data-theme="light"] .person-jada .person-photo { background-image: linear-gradient(0deg, rgba(23, 32, 25, .82), transparent 65%), var(--person-image); }

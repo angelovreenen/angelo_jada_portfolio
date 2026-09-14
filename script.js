@@ -15,7 +15,7 @@ const applyTheme = (theme) => {
 	localStorage.setItem('portfolio-theme', theme);
 };
 
-applyTheme(localStorage.getItem('portfolio-theme') || 'dark');
+applyTheme(localStorage.getItem('portfolio-theme') || 'light');
 
 themeButtons.forEach((button) => {
 	button.addEventListener('click', () => applyTheme(button.dataset.themeChoice));
