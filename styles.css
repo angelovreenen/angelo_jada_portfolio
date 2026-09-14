@@ -265,9 +265,10 @@ body[data-theme="light"] .hero-overlay { background: linear-gradient(90deg, rgba
 body[data-theme="light"] .person-angelo .person-photo, 
 body[data-theme="light"] .person-jada .person-photo { background-image: linear-gradient(0deg, rgba(23, 32, 25, .82), transparent 65%), var(--person-image); }
 body[data-theme="light"] .showreel-shade { background: rgba(23, 32, 25, .22); }
-body[data-theme="light"] .hero h1, 
-body[data-theme="light"] .hero-bottom > p, 
-body[data-theme="light"] .person-info h3, 
-body[data-theme="light"] .person-info > p:not(.eyebrow), 
-body[data-theme="light"] .media-caption, 
+body[data-theme="light"] .hero h1,
+body[data-theme="light"] .hero-bottom > p,
+body[data-theme="light"] .media-caption,
 body[data-theme="light"] .duration { color: var(--bg-primary); }
+
+body[data-theme="light"] .person-info h3,
+body[data-theme="light"] .person-info > p:not(.eyebrow) { color: var(--text-primary); }
