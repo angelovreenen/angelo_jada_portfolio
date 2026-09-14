@@ -255,8 +255,8 @@ body[data-theme="light"] {
     --bg-secondary: #E5EAE1;
     --text-primary: #172019;
     --text-muted: #5F6961;
-    --accent-gold: #75B82B;
-    --accent-hover: #91D63E;
+    --accent-gold: #39FF14;
+    --accent-hover: #39FF14;
     --line: rgba(23, 32, 25, .18);
 }
 body[data-theme="light"] .site-header { background: rgba(244, 246, 241, .88); }
