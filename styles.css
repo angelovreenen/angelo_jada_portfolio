@@ -271,3 +271,24 @@ body[data-theme="light"] .person-info h3,
 body[data-theme="light"] .person-info > p:not(.eyebrow), 
 body[data-theme="light"] .media-caption, 
 body[data-theme="light"] .duration { color: var(--bg-primary); }
+
+body[data-theme="light"] .button-primary {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #111111;
+}
+body[data-theme="light"] .button-primary:hover {
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #111111;
+}
+body[data-theme="light"] .button-ghost {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #111111;
+}
+body[data-theme="light"] .button-ghost:hover {
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
+}
