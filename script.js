@@ -2,24 +2,13 @@ const header = document.querySelector('.site-header');
 const menuToggle = document.querySelector('.menu-toggle');
 const siteNav = document.querySelector('.site-nav');
 const bookingForm = document.querySelector('.booking-form');
-const themeButtons = document.querySelectorAll('[data-theme-choice]');
 
-const applyTheme = (theme) => {
-	theme = theme === 'light' ? 'light' : 'dark';
-	document.body.dataset.theme = theme;
-	themeButtons.forEach((button) => {
-		const isActive = button.dataset.themeChoice === theme;
-		button.classList.toggle('is-active', isActive);
-		button.setAttribute('aria-pressed', String(isActive));
-	});
-	localStorage.setItem('portfolio-theme', theme);
+const applyTheme = () => {
+	document.body.dataset.theme = 'dark';
+	localStorage.setItem('portfolio-theme', 'dark');
 };
 
-applyTheme(localStorage.getItem('portfolio-theme') || 'light');
-
-themeButtons.forEach((button) => {
-	button.addEventListener('click', () => applyTheme(button.dataset.themeChoice));
-});
+applyTheme();
 
 const closeMenu = () => {
 	menuToggle.setAttribute('aria-expanded', 'false');
